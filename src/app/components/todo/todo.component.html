@@ -1,0 +1,10 @@
+<app-add (todoAdd)="addTodo($event)" ></app-add>
+<div *ngIf="this.todos.length===0; else elseBlock" class="msg h1 my-5 p-3 bg-danger text-center">
+   No Todos to Display
+</div>
+<ng-template #elseBlock>
+   <div *ngFor="let todo of todos.reverse()  let i = index" id="todo-list" class="d-flex justify-content-center" >
+      <app-todo-item [todo]="todo" [i]="i" (todoDlt)="deleteTodo($event)" (todoCheckBox)="toggleTodoActive($event)"></app-todo-item>
+   </div>
+</ng-template>
+

@@ -1,0 +1,27 @@
+
+
+
+
+.card{
+   width: 30rem;
+}
+.bg{
+   background-color: #BCDBDF;
+}
+.bg .card-header{
+   background-color: #40A8C4;
+}
+.bg-success{
+   background-color: #7ED3B2 !important;
+}
+.bg-success .card-header{
+   background-color: #4AA96C !important;
+}
+
+.btn{
+   transition: all .7s ease-in-out;
+}
+.btn:hover{
+   transform: translateY(-5px);
+   box-shadow: 0 5px 5px rgba(255, 0, 0, 0.237);
+}
