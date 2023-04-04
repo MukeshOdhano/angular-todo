@@ -34,9 +34,7 @@ export class TodoItemComponent {
   
   }
   onActive(todo: Todo) {
-    todo.active = !todo.active;
-    console.log(todo)
-    console.log(todo.active)
+    this.todoCheckBox.emit(todo)
   }
   
 }
